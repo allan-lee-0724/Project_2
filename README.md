@@ -23,6 +23,10 @@
     - when doing "docker compose up -d", a Network project_2_default is being created... what is this?
     - one prometheus-external-node is pending...
     - prometheus data source not found on grafana. when manually adding, "Error reading Prometheus: An error occurred within the plugin"
+    - solved: uninstalling helm charts resulted in indefinite "Terminating" status on select pods
+        - force delete the pod by using {kubectl delete pod <PODNAME> --grace-period=0 --force --namespace <NAMESPACE>}
+        - RETRO REVIEW FROM JAN 17, 2023: FORCE DELETE WILL ONLY DELETE THE POD FROM CLI, NOT ACTUALLY STOPPING/TERMINATING IT FROM THE CLUSTER. THE POD MIGHT STILL BE RUNNING IN THE BACKEND--THIS WILL CAUSE ISSUES EVERYWHERE DOWN THE STREAM
+            - WHEN REINSTALLING HELM CHARTS AND RECONFIGURING YAML FILES
 
 ## update Jan 13, 2023
 - refurnished Spring app 
