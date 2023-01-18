@@ -37,5 +37,6 @@ Scripts/Script.sql
 
 application.properties
 
+*.tfstate
 *.tfvars
 *.log
