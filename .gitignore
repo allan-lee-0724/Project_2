@@ -37,6 +37,8 @@ Scripts/Script.sql
 
 application.properties
 
+*.terraform
+*.tfstate.backup
 *.tfstate
 *.tfvars
 *.log
