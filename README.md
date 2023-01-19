@@ -4,6 +4,9 @@
 - added dashboard
 - fixed ingress rule
 - incorporated Terraform-created RDS into the planetarium project
+- issue discoverd:
+    - solved: DBeaver cannot access newly created RDS by Terraform: connection timed out
+        - when creating resource for Terraform RDS the "publicly_accessible" option is defaulted to "false". Switching this value to "true" will solve the problem
 - all discovered issues fixed
 
 ## update Jan 18, 2023
