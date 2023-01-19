@@ -5,6 +5,11 @@
 - things left:
     - link the created RDS with K8s
     - add Grafana custom alerts and dashboards 
+- issues discovered:
+    - Terraform keeps giving a invalid credential error
+        - solved: update C://Users/user/.aws/credentials file and add IAM credentials
+    - Terraform gives a invalid DB engine error
+        - solved: Use Postgres instead of PostgreSQL. Don't be mislead by the engine name on AWS
 - issue pending:
     - URI with /planetarium added will bypass the authentication step
 
