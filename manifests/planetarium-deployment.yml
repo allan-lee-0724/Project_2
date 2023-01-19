@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: "planetarium-app"
-        image: "teamkuberknights/planetarium:rollingV3"
+        image: "practice"
         imagePullPolicy: "Always"
         ports:
         - containerPort: 8080
