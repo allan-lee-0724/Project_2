@@ -1,5 +1,11 @@
 # Project Planetarium 
 
+## update Jan 19, 2023
+- added dashboard
+- fixed ingress rule
+- incorporated Terraform-created RDS into the planetarium project
+- all discovered issues fixed
+
 ## update Jan 18, 2023
 - finished Terraform bucket and RDS creation
 - things left:

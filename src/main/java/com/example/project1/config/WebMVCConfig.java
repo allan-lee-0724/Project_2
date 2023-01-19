@@ -29,9 +29,9 @@ public class WebMVCConfig implements WebMvcConfigurer { // Spring Web is the new
          * addInterceptor tells spring to keep track of the basicInterceptor that is created at runtime
          * addPathPatterns tells Spring what http url patterns should be intercepted by our interceptor
          */
-        registry.addInterceptor(basicInterceptor).addPathPatterns("/planetarium/**").order(Ordered.LOWEST_PRECEDENCE);
-        registry.addInterceptor(loggingInterceptor).addPathPatterns("/planetarium/**").order(Ordered.HIGHEST_PRECEDENCE);
-        registry.addInterceptor(authenticationInterceptor).addPathPatterns("/planetarium/api/**").order(1);
+        registry.addInterceptor(basicInterceptor).addPathPatterns("/**").order(Ordered.LOWEST_PRECEDENCE);
+        registry.addInterceptor(loggingInterceptor).addPathPatterns("/**").order(Ordered.HIGHEST_PRECEDENCE);
+        registry.addInterceptor(authenticationInterceptor).addPathPatterns("/api/**").order(1);
         
     }
 }
