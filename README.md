@@ -70,3 +70,6 @@
 - fixed issues with "promtail-config not found": need to kubectl apply -f promtail-configuration first
 - discovered issues with Grafana: Loki data source not set up by default
     - temp solution: add manually, data source and label found successfully
+
+
+    
