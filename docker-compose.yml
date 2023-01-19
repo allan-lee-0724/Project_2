@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: allanlee0724/test:v2
+    image: allanlee0724/test:v3
     container_name: planetarium
     ports:
       - 8080:8080

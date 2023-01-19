@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: "planetarium-app"
-        image: "allanlee0724/test:v2"
+        image: "allanlee0724/test:v3"
         imagePullPolicy: "Always"
         ports:
         - containerPort: 8080
