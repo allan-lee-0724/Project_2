@@ -31,7 +31,7 @@ public class WebMVCConfig implements WebMvcConfigurer { // Spring Web is the new
          */
         registry.addInterceptor(basicInterceptor).addPathPatterns("planetarium/**").order(Ordered.LOWEST_PRECEDENCE);
         registry.addInterceptor(loggingInterceptor).addPathPatterns("planetarium/**").order(Ordered.HIGHEST_PRECEDENCE);
-        registry.addInterceptor(authenticationInterceptor).addPathPatterns("/api/**").order(1);
+        registry.addInterceptor(authenticationInterceptor).addPathPatterns("planetarium/api/**").order(1);
         
     }
 }
