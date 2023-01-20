@@ -1,3 +1,3 @@
-variable "access_key" {}
+variable "username" {}
 
-variable "secret_key" {}
+variable "password" {}
