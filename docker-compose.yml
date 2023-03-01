@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: teamkuberknights/planetarium:rollingV4
+    image: allanlee0724/pod3
     container_name: planetarium
     ports:
       - 8080:8080
